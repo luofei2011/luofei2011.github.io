@@ -150,6 +150,8 @@ body {
   -moz-animation: logo 5s infinite;
   -ms-animation: logo 5s infinite;
   -o-animation: logo 5s infinite;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 .totop {
   display: block;
@@ -163,6 +165,8 @@ body {
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   transition: all .5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 @keyframes logo {
   0% {

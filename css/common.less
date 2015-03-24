@@ -8,6 +8,10 @@
 .box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
     .box-shadow(@style, rgba(0, 0, 0, @alpha));
 }
+.user-select() {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
 
 html {
     font-size: 10px;
@@ -166,6 +170,7 @@ body {
     -moz-animation: logo 5s infinite;
     -ms-animation: logo 5s infinite;
     -o-animation: logo 5s infinite;
+    .user-select();
 }
 .totop {
     display: block;
@@ -179,6 +184,7 @@ body {
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     transition: all .5s;
+    .user-select();
 }
 @keyframes logo {
     0% {
