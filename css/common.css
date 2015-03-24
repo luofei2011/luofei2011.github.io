@@ -1,0 +1,221 @@
+html {
+  font-size: 10px;
+  font-family: "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+  background-color: #fff;
+  color: #333;
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  color: #18bc9c;
+  text-decoration: none;
+}
+.clearfix:after {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+/*Header 区域*/
+body {
+  margin-top: 80px;
+}
+#header {
+  height: 60px;
+  line-height: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #fff;
+  z-index: 999;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+}
+#header .no-logo {
+  font-size: 2.8rem;
+  float: left;
+  color: #18bc9c;
+  margin-left: 20px;
+}
+#header nav {
+  float: right;
+  margin-right: 10px;
+}
+#header nav ul li {
+  float: left;
+  list-style: none;
+  font-size: 0;
+}
+#header nav ul li a {
+  font-size: 1.6rem;
+  display: block;
+  padding: 0 6px;
+}
+/*****Header 区域结束*******/
+.page-content {
+  padding: 0 10px;
+  font-size: 1.4rem;
+  position: relative;
+}
+.page-content .wrapper .post h1,
+.page-content .wrapper .post h2,
+.page-content .wrapper .post h3,
+.page-content .wrapper .post h4,
+.page-content .wrapper .post h5,
+.page-content .wrapper .post h6 {
+  margin: 16px 0;
+  font-weight: 800;
+}
+.page-content .wrapper .post h1 {
+  font-size: 2.0rem;
+  margin-top: 25px;
+  color: #18bc9c;
+}
+.page-content .wrapper .post h2 {
+  font-size: 1.6rem;
+}
+.page-content .wrapper .post h4 {
+  font-size: 1.6rem;
+}
+.page-content .wrapper .post .post-meta {
+  color: #aaa;
+}
+.page-content .wrapper .post ol {
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+.page-content .wrapper .post li {
+  margin-bottom: 6px;
+}
+.page-content .wrapper .post ul li {
+  list-style: square;
+}
+.page-content .wrapper .post ul {
+  margin-left: 18px;
+}
+.page-content .wrapper .post blockquote {
+  margin: 0 0 10px 0;
+  padding: 8px 15px;
+  border-left: 3px solid #ddd;
+  padding-left: 12px;
+  color: #666;
+  font-size: 1.5rem;
+}
+.page-content .wrapper .post blockquote p {
+  margin: 0;
+}
+.page-content a:hover {
+  color: #00a686;
+  -webkit-transition: color .5s;
+  -moz-transition: color .5s;
+  transition: color .5s;
+  text-decoration: underline;
+}
+#footer {
+  text-align: center;
+  padding-bottom: 20px;
+}
+#footer p {
+  color: #18bc9c;
+  font-size: 1.6rem;
+  margin: 20px 0;
+}
+#footer .theme-author,
+#footer .copyright {
+  display: inline-block;
+}
+#hide-logo {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  font-size: 20rem;
+  border-radius: 50%;
+  border: 1px solid #18bc9c;
+  margin: 20px auto;
+  background-color: #18bc9c;
+  color: #fff;
+  -webkit-animation: logo 5s infinite;
+  -moz-animation: logo 5s infinite;
+  -ms-animation: logo 5s infinite;
+  -o-animation: logo 5s infinite;
+}
+.totop {
+  display: block;
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  width: 40px;
+  height: 40px;
+  background: url(/img/arrow.png) no-repeat;
+  z-index: 999;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+}
+@keyframes logo {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes logo {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@-moz-keyframes logo {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+@-o-keyframes logo {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(180deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+/***reset style***/
+.full .lineno {
+  display: none;
+}
+/**media query**/
+@media screen and (min-width: 1080px) {
+  .full-width {
+    width: 980px;
+    margin: 0 auto;
+  }
+}

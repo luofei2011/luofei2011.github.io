@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head_new.html %}
+
+  <body>
+
+    {% include header_new.html %}
+
+    <div class="page-content full-width">
+      <div class="wrapper">
+        {{ content }}
+        
+        {%include comments.html%}
+        {%include footer_new.html%}
+      </div>
+    </div>
+  </body>
+
+</html>

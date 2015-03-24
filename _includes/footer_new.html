@@ -1,0 +1,57 @@
+<div id="footer">
+    <p>Friendly links? 友情链接？？？c:wq</p>
+    <div id="hide-logo">P</div>
+    <div class="clearfix">
+        <div class="copyright">&copy; <span class="year"></div>
+        <div class="theme-author">本主题由<a href="/">「 Poised_flw 」</a>YY而成</div>
+    </div>
+</div>
+<a class="totop" href="javascript:;"></a>
+<script>
+// 还外链啥js
+(function() {
+    var yearDom = document.getElementById('footer').querySelector('.year');
+    var totopDom = document.querySelector('.totop');
+    var year = (new Date()).getFullYear();
+    yearDom.innerHTML = year;
+
+    // for scroll
+    var body = document.body;
+    var postDom = document.querySelector('.post');
+    var postTitle = postDom.querySelector('h1');
+    var subTitles = postDom.querySelectorAll('h4');
+    var logo = document.querySelector('.no-logo').querySelector('a');
+    var tmpLogo = logo.innerHTML;
+    var yLabel = 0;
+    var timer = null;
+
+    window.addEventListener('scroll', function(e) {
+        var scrollTop = body.scrollTop;
+        this.clearTimeout(timer);
+
+        if (scrollTop > 100) {
+            totopDom.style.display = 'block';
+
+            timer = setTimeout(function() {
+                totopDom.style.display = 'none';
+            }, 3000);
+        } else {
+            totopDom.style.display = 'none';
+        }
+    });
+
+    totopDom.onmouseover = function() {
+        window.clearTimeout(timer);
+    }
+
+    totopDom.onmouseleave = function() {
+        timer = setTimeout(function() {
+            totopDom.style.display = 'none';
+        }, 3000);
+    }
+
+    totopDom.addEventListener('click', function() {
+        window.scrollTo(0, 0);
+    });
+})();
+</script>
