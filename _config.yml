@@ -11,7 +11,7 @@ url: "http://poised-flw.com" # the base hostname & protocol for your site
 github_username: luofei2011 
 
 # Build settings
-markdown: kramdown
+markdown: rdiscount 
 
 # pagination
 paginate: 10
