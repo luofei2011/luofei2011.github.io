@@ -12,4 +12,20 @@ layout: default
     {{ content }}
   </article>
 
+  <div class="pagination">
+      <ul>
+      {%if page.previous%}
+      <li>上一篇：<a href="{{page.previous.url}}">{{page.previous.title}}</a></li>
+      {%else%}
+      <li>上一篇：没有了~</li>
+      {%endif%}
+      {%if page.next%}
+      <li>下一篇：<a href="{{page.next.url}}">{{page.next.title}}</a></li>
+      {%else%}
+      <li>下一篇：没有了~</li>
+      {%endif%}
+      </ul>
+  </div>
 </div>
+{%include contact.html%}
+{%include comments.html%}

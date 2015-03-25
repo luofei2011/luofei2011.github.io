@@ -12,3 +12,7 @@ github_username: luofei2011
 
 # Build settings
 markdown: kramdown
+
+# pagination
+paginate: 10
+paginate_path: "page:num"

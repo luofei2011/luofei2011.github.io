@@ -27,10 +27,67 @@ a {
   overflow: hidden;
   clear: both;
 }
-/*Header 区域*/
 body {
   margin-top: 80px;
 }
+/*****首页*****/
+#index .blog-item {
+  margin: 10px 0;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 20px;
+}
+#index .blog-item:first-child {
+  margin-top: 20px;
+}
+#index .blog-item:hover {
+  border-color: #18bc9c;
+}
+#index .blog-item h1 {
+  margin: 0;
+}
+#index .blog-item p {
+  margin-bottom: 6px;
+}
+#index .blog-item .date {
+  font-size: 1.6rem;
+}
+#index .blog-item .time_ago {
+  font-family: "Microsoft YaHei";
+  color: #aaa;
+  font-size: 1.4rem;
+  margin-left: 6px;
+}
+#index .time-line {
+  float: left;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 1px solid #18bc9c;
+  color: #18bc9c;
+  text-align: center;
+  display: none;
+}
+#index .blog-tags {
+  margin-top: 6px;
+}
+#index .blog-tags .tag {
+  display: inline-block;
+  margin-right: 6px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 1px 5px;
+  background: #ffad21;
+}
+#index .blog-tags .tag:last-child {
+  margin-right: 0;
+}
+#index .blog-tags .tag:hover {
+  text-decoration: none;
+  background-color: #ffa100;
+}
+/*Header 区域*/
 #header {
   height: 60px;
   line-height: 60px;
@@ -115,6 +172,10 @@ body {
 .page-content .wrapper .post blockquote p {
   margin: 0;
 }
+.page-content .wrapper .pagination,
+.page-content .wrapper .pagination-idx {
+  margin-top: 30px;
+}
 .page-content a:hover {
   color: #00a686;
   -webkit-transition: color .5s;
@@ -146,12 +207,14 @@ body {
   margin: 20px auto;
   background-color: #18bc9c;
   color: #fff;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+#hide-logo.active {
   -webkit-animation: logo 5s infinite;
   -moz-animation: logo 5s infinite;
   -ms-animation: logo 5s infinite;
   -o-animation: logo 5s infinite;
-  -webkit-user-select: none;
-  -moz-user-select: none;
 }
 .totop {
   display: block;
@@ -167,6 +230,29 @@ body {
   transition: all .5s;
   -webkit-user-select: none;
   -moz-user-select: none;
+}
+#share {
+  height: 60px;
+  line-height: 60px;
+  border: 1px dashed #ddd;
+  margin: 20px 0;
+}
+#share:hover {
+  border-color: #18bc9c;
+}
+#share .bdsharebuttonbox {
+  display: inline-block;
+  vertical-align: middle;
+}
+#share .title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-right: 6px;
+  padding-left: 16px;
+}
+#share .git,
+#share .wb {
+  margin-right: 15px;
 }
 @keyframes logo {
   0% {
@@ -222,4 +308,42 @@ body {
     width: 980px;
     margin: 0 auto;
   }
+}
+/***button style**/
+#post-pagination {
+  margin-top: 50px;
+}
+#post-pagination .btn {
+  display: inline-block;
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+  padding: 5px 8px;
+  background: #18bc9c;
+  border: 1px solid #18bc9c;
+  border-radius: 3px;
+}
+#post-pagination .btn:hover {
+  background-color: #00a686;
+  text-decoration: none;
+  color: #fff;
+}
+#post-pagination .btn.disabled {
+  background: #fff;
+  color: #18bc9c;
+}
+#post-pagination .pages {
+  display: inline-block;
+  margin: 0 20px;
+  font-size: 1.6rem;
+}
+#post-pagination .pages .page {
+  list-style: none;
+  display: inline-block;
+  margin: 0 4px;
+}
+#post-pagination .pages .page a {
+  font-family: "Microsoft YaHei";
+  display: block;
+  padding: 5px;
 }

@@ -1,6 +1,6 @@
 <div id="footer">
     <p>Friendly links? 友情链接？？？c:wq</p>
-    <div id="hide-logo">P</div>
+    <div id="hide-logo" class="active" title="强迫症，双击停掉吧……">P</div>
     <div class="clearfix">
         <div class="copyright">&copy; <span class="year"></div>
         <div class="theme-author">本主题由<a href="/">「 Poised_flw 」</a>YY而成</div>
@@ -17,12 +17,6 @@
 
     // for scroll
     var body = document.body;
-    var postDom = document.querySelector('.post');
-    var postTitle = postDom.querySelector('h1');
-    var subTitles = postDom.querySelectorAll('h4');
-    var logo = document.querySelector('.no-logo').querySelector('a');
-    var tmpLogo = logo.innerHTML;
-    var yLabel = 0;
     var timer = null;
 
     window.addEventListener('scroll', function(e) {
@@ -52,6 +46,22 @@
 
     totopDom.addEventListener('click', function() {
         window.scrollTo(0, 0);
+    });
+
+    // 修正title信息
+    var postTitle = document.querySelector('header.post-header');
+    try {
+        document.title = postTitle.querySelector('.post-title').innerHTML + ' --来自 ' + document.title;
+    } catch(e) {}
+
+    // 停掉logo旋转
+    var hideLogo = document.getElementById('hide-logo');
+    hideLogo.addEventListener('dblclick', function() {
+        if (this.className == "active") {
+            this.className = "";
+        } else {
+            this.className = "active";
+        }
     });
 })();
 </script>

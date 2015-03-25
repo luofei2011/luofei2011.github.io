@@ -6,6 +6,7 @@ category: "设计模式"
 tags: 
   - 设计模式
 ---
+{% include JB/setup %}
 
 最近闲来无事，刚好第三次重温下《Javascript 模式》这本书。
 
@@ -13,7 +14,7 @@ tags:
 
 “单体”即一个类的所有实例都返回的是同一个引用。这点和Javascript中对象的创建完全不同，即使创建两个属性完全一样的对象，但二者还是不相同的。
 
-{%highlight javascript%}
+{%highlight javascript linenos%}
 var obj1 = {name: 'poised-flw.com'};
 var obj2 = {name: 'poised-flw.com'};
 
@@ -132,17 +133,4 @@ b1 === b2; // true
 })(this);
 {%endhighlight%}
 
-还等什么，赶紧在项目`Javascript`中试试吧~
-
-[http://www.baidu.com/](http://www.baidu.com)
-
-* item1
-* item2
-* item3
-
-1. item1
-2. item2
-3. item3
-
-> 这是引用的样式调整
-
+还等什么，赶紧在项目中试试吧~
