@@ -271,8 +271,18 @@ body {
         margin-right: 6px;
         padding-left: 16px;
     }
-    .git, .wb {
-        margin-right: 15px;
+    .icon {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+    .icon-github {
+        background: url(/img/icons/github_icon.png) no-repeat;
+    }
+    .icon-wb {
+        background: url(/img/icons/wb_icon.png) no-repeat;
     }
 }
 @keyframes logo {
@@ -327,14 +337,6 @@ body {
     }
 }
 
-/**media query**/
-@media screen and (min-width: 1080px) {
-    .full-width {
-        width: 980px;
-        margin: 0 auto;
-    }
-}
-
 /***button style**/
 #post-pagination {
     margin-top: 50px;
@@ -356,10 +358,13 @@ body {
             background: #fff;
             color: @highlightColor;
         }
+        &:first-child {
+            margin-right: 20px;
+        }
     }
     .pages {
         display: inline-block;
-        margin: 0 20px;
+        margin-right: 20px;
         font-size: 1.6rem;
         .page {
             list-style: none;
@@ -371,6 +376,19 @@ body {
                 padding: 5px;
             }
         }
+    }
+}
+
+/**media query**/
+@media screen and (min-width: 1080px) {
+    .full-width {
+        width: 980px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 400px) {
+    #post-pagination .pages {
+        display: none;
     }
 }
 
