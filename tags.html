@@ -1,0 +1,90 @@
+---
+layout: default 
+title: pagination
+---
+
+<div id="index">
+<!--暂时不提供分类和分tag浏览-->
+<!--时间线的优化有时间再做：2015-03-25-->
+{% for tag in site.tags %}
+<div class="tag-item" data-id="#{{ tag[0] }}">
+    {% for post in tag[1] %}
+    <div class="blog-item">
+        <div class="date" data-date="{{ post.date| date: "%Y-%m-%d" }}">{{ post.date| date: "%Y-%m-%d" }}<span class="time_ago"></span></div>
+        <div class="time-line" data-date="{{ post.date| date: "%Y-%m-%d" }}"></div>
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        <div class="blog-tags">
+            {% for tag in post.tags %}
+            <a href="/tags.html#{{ tag }}" class="tag">{{tag}}</a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endfor %}
+
+{%include contact.html%}
+<script>
+(function() {
+    var blogs = document.getElementById('index').querySelectorAll('.blog-item');
+    var tmp;
+    var date;
+    var timeline;
+    var now = (+new Date());
+    var compare;
+    var diff;
+
+    for (var i = 0, len = blogs.length; i < len; i++) {
+        tmp = blogs[i];
+        date = tmp.querySelector('.date');
+        timeline = tmp.querySelector('.time_ago');
+
+        try {
+            compare = (+ new Date(date.getAttribute('data-date')));
+            diff = now - compare;
+
+            // 计算相差天数
+            diff = diff / 3600000 / 24;
+
+            if (diff > 30) {
+                diff = diff / 30;
+
+                if (diff > 12) {
+                    diff = Math.floor(diff / 12);
+                    diff = diff + "年";
+                } else {
+                    diff = Math.ceil(diff);
+                    diff = diff + "月";
+                }
+            } else {
+                diff = Math.ceil(diff);
+                diff = diff + "天";
+            }
+
+            diff = "(" + diff + "前)";
+
+            timeline.innerHTML = diff;
+        } catch(e) {}
+    }
+
+    // 处理过滤功能
+    function filter_tag() {
+        var hash = location.hash;
+        var $tags = document.querySelectorAll('.tag-item');
+        for (i = 0, len = $tags.length; i < len; i++) {
+            tmp = $tags[i];
+            if (tmp.getAttribute('data-id') === hash) {
+                tmp.style.display = 'block';
+            } else {
+                tmp.style.display = 'none';
+            }
+        }
+    }
+
+    // 初始化
+    filter_tag();
+
+    // 模拟异步
+    window.addEventListener('hashchange', filter_tag, false);
+})();
+</script>

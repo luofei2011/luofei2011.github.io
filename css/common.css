@@ -31,6 +31,9 @@ body {
   margin-top: 80px;
 }
 /*****首页*****/
+#index .tag-item {
+  display: none;
+}
 #index .blog-item {
   margin: 10px 0;
   border-bottom: 1px dashed #ddd;
