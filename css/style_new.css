@@ -74,7 +74,7 @@ width: 1%;
   -ms-user-select: none;
   user-select: none;
 }
-.highlight pre {
+pre {
     font-family: Helvetica;
     font-size: 1.4rem;
     padding: 10px;
@@ -82,7 +82,7 @@ width: 1%;
     border-radius: 5px;
     overflow-x: auto;
 }
-.highlight pre:hover {
+pre:hover {
     -webkit-box-shadow: 0 0 2px #00a686;
     -moz-box-shadow: 0 0 2px #00a686;
     box-shadow: 0 0 2px #00a686;
@@ -98,7 +98,7 @@ code {
     border-radius: 3px;
     background: #f9f9f9;
 }
-.highlight code {
+pre code {
     background: #fff;
     border: 0 none;
 }

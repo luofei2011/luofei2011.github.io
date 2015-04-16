@@ -13,9 +13,11 @@ tags: ['vim']
 
 2. 加入以下快捷键,在编辑中根据文件类型实时更改
 
-    nnoremap <leader>1 :set filetype=xhtml<CR>  "快捷键: \+1"
-    nnoremap <leader>2 :set filetype=css<CR>  
-    nnoremap <leader>3 :set filetype=javascript<CR>  
-    nnoremap <leader>4 :set filetype=php<CR>
+{%highlight vim%}
+nnoremap <leader>1 :set filetype=xhtml<CR>  "快捷键: \+1"
+nnoremap <leader>2 :set filetype=css<CR>  
+nnoremap <leader>3 :set filetype=javascript<CR>  
+nnoremap <leader>4 :set filetype=php<CR>
+{%endhighlight%}
 
 3. 问题完美解决!

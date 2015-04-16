@@ -12,6 +12,7 @@ github_username: luofei2011
 
 # Build settings
 markdown: rdiscount 
+highlighter: pygments
 
 # pagination
 paginate: 10
