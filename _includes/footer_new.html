@@ -1,9 +1,43 @@
 <div id="footer">
-    <p>Friendly links? 友情链接？？？c:wq</p>
-    <div id="hide-logo" class="active" title="强迫症，双击停掉吧……">P</div>
-    <div class="clearfix">
-        <div class="copyright">&copy; <span class="year"></div>
-        <div class="theme-author">本主题由<a href="/">「 Poised_flw 」</a>YY而成，服务器<a href="https://www.linode.com/?r=cbdf902c6a43e84fd6e2ebdac9b8db8fbf5b4f46" target="_blank">「 Linode 」</a></div>
+    <div class="foot-show">
+        <div class="foot-links clearfix">
+            <img src="/img/icons/logo.png" alt="">
+            <div class="about-me">
+                <p>联系我</p>
+                <p>地址：帝都</p>
+                <p>Email: luofeihit2010@gmail.com</p>
+            </div>
+        </div>
+        <div class="foot-contact">
+            <div class="contact-item">
+                <p class="contact-item-title">微信公众号</p>
+                <a href="javascript:void(0)" class="contact-item-img">
+                    <img src="/img/wx.png" alt="">
+                </a>
+            </div>
+            <div class="contact-item">
+                <p class="contact-item-title">Github</p>
+                <a href="https://github.com/luofei2011" class="contact-item-img">
+                    <img src="/img/icons/git.png" alt="">
+                </a>
+            </div>
+            <div class="contact-item">
+                <p class="contact-item-title">新浪微博</p>
+                <a href="http://weibo.com/luofeihit2010" class="contact-item-img">
+                    <img src="/img/icons/wb.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix foot-last">
+        <div class="friends">
+            友情链接：
+            <a href="http://www.heibaipig.com?fr=poised_flw">黑白猪的部落阁</a>
+        </div>
+        <div class="cr">
+            <div class="copyright">&copy; <span class="year"></div>
+            <div class="theme-author">本主题由<a href="/">「 Poised_flw 」</a>YY而成，服务器<a href="https://www.linode.com/?r=cbdf902c6a43e84fd6e2ebdac9b8db8fbf5b4f46" target="_blank">「 Linode 」</a></div>
+        </div>
     </div>
 </div>
 <a class="totop" href="javascript:;"></a>
@@ -53,16 +87,6 @@
     try {
         document.title = postTitle.querySelector('.post-title').innerHTML + ' --来自 ' + document.title;
     } catch(e) {}
-
-    // 停掉logo旋转
-    var hideLogo = document.getElementById('hide-logo');
-    hideLogo.addEventListener('dblclick', function() {
-        if (this.className == "active") {
-            this.className = "";
-        } else {
-            this.className = "active";
-        }
-    });
 })();
 </script>
 <script>

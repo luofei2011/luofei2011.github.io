@@ -19,7 +19,7 @@ title: pagination
 </div>
 {% endfor %}
 
-<div id="post-pagination" class="pagination-idx">
+<div id="post-pagination" class="pagination-idx clearfix">
   {% if paginator.previous_page %}
     {% if paginator.previous_page == 1 %}
     <a href="/" class="btn">上一页</a>
@@ -58,7 +58,7 @@ title: pagination
 
 </div>
 </div>
-{%include contact.html%}
+{%include weixin.html%}
 <script>
 (function() {
     var blogs = document.getElementById('index').querySelectorAll('.blog-item');

@@ -13,6 +13,18 @@
     -moz-user-select: none;
 }
 
+.display-box() {
+    display: box;
+    display: -moz-box;
+    display: -webkit-box;
+}
+
+.box-flex() {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+}
+
 html {
     font-size: 10px;
     font-family: "Georgia", "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
@@ -38,7 +50,12 @@ a {
 .clearfix:after {
     display: block;
     overflow: hidden;
+    content: "";
+    height: 0;
     clear: both;
+}
+.clearfix {
+    zoom: 1;
 }
 body {
     margin-top: 80px;
@@ -215,8 +232,55 @@ body {
     }
 }
 #footer {
-    text-align: center;
-    padding-bottom: 20px;
+    .foot-show {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        .display-box();
+        .foot-links, .foot-contact {
+            width: 50%;
+            border-top: 1px solid #ddd;
+            .box-flex();
+        }
+        .foot-links {
+            padding-top: 30px;
+            padding-left: 15px;
+            img {
+                margin-right: 15px;
+                width: 50px;
+            }
+            .about-me {
+                display: inline-block;
+                p {
+                    font-size: 1.2rem;
+                    color: #666;
+                    margin: 0;
+                    margin-bottom: 6px;
+                }
+            }
+        }
+        .foot-contact {
+            padding-left: 15px;
+            padding-top: 15px;
+            .contact-item {
+                width: 100px;
+                display: inline-block;
+                text-align: center;
+                .contact-item-title {
+                    font-size: 1.2rem;
+                    margin: 10px 0;
+                    color: #888;
+                    text-align: center;
+                }
+                .contact-item-img {
+                    display: block;
+                    img {
+                        width: 50px;
+                    }
+                }
+            }
+            .display-box();
+        }
+    }
     p {
         color: @highlightColor;
         font-size: 1.6rem;
@@ -224,6 +288,16 @@ body {
     }
     .theme-author, .copyright {
         display: inline-block;
+    }
+    .foot-last {
+        border-top: 1px solid #ddd;
+        padding: 15px 0;
+    }
+    .friends {
+        float: left;
+    }
+    .cr {
+        float: right;
     }
 }
 #hide-logo {
@@ -347,6 +421,7 @@ body {
 #post-pagination {
     margin-top: 50px;
     .btn {
+        float: left;
         display: inline-block;
         color: #fff;
         font-weight: 800;
@@ -369,6 +444,7 @@ body {
         }
     }
     .pages {
+        float: left;
         display: inline-block;
         margin-right: 20px;
         font-size: 1.6rem;

@@ -12,5 +12,3 @@ title: Poised-flw的前端博客
 3. [如何安装并配置好git](/wiki/3.html)
 
 4. [坑爹，ubuntu上装的node居然是这样](/wiki/4.html)
-
-{%include contact.html%}

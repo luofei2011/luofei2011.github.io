@@ -25,7 +25,12 @@ a {
 .clearfix:after {
   display: block;
   overflow: hidden;
+  content: "";
+  height: 0;
   clear: both;
+}
+.clearfix {
+  zoom: 1;
 }
 body {
   margin-top: 80px;
@@ -189,9 +194,61 @@ body {
   transition: color .5s;
   text-decoration: underline;
 }
-#footer {
+#footer .foot-show {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: box;
+  display: -moz-box;
+  display: -webkit-box;
+}
+#footer .foot-show .foot-links,
+#footer .foot-show .foot-contact {
+  width: 50%;
+  border-top: 1px solid #ddd;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  box-flex: 1;
+}
+#footer .foot-show .foot-links {
+  padding-top: 30px;
+  padding-left: 15px;
+}
+#footer .foot-show .foot-links img {
+  margin-right: 15px;
+  width: 50px;
+}
+#footer .foot-show .foot-links .about-me {
+  display: inline-block;
+}
+#footer .foot-show .foot-links .about-me p {
+  font-size: 1.2rem;
+  color: #666;
+  margin: 0;
+  margin-bottom: 6px;
+}
+#footer .foot-show .foot-contact {
+  padding-left: 15px;
+  padding-top: 15px;
+  display: box;
+  display: -moz-box;
+  display: -webkit-box;
+}
+#footer .foot-show .foot-contact .contact-item {
+  width: 100px;
+  display: inline-block;
   text-align: center;
-  padding-bottom: 20px;
+}
+#footer .foot-show .foot-contact .contact-item .contact-item-title {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #888;
+  text-align: center;
+}
+#footer .foot-show .foot-contact .contact-item .contact-item-img {
+  display: block;
+}
+#footer .foot-show .foot-contact .contact-item .contact-item-img img {
+  width: 50px;
 }
 #footer p {
   color: #18bc9c;
@@ -201,6 +258,16 @@ body {
 #footer .theme-author,
 #footer .copyright {
   display: inline-block;
+}
+#footer .foot-last {
+  border-top: 1px solid #ddd;
+  padding: 15px 0;
+}
+#footer .friends {
+  float: left;
+}
+#footer .cr {
+  float: right;
 }
 #hide-logo {
   width: 200px;
@@ -322,6 +389,7 @@ body {
   margin-top: 50px;
 }
 #post-pagination .btn {
+  float: left;
   display: inline-block;
   color: #fff;
   font-weight: 800;
@@ -344,6 +412,7 @@ body {
   margin-right: 20px;
 }
 #post-pagination .pages {
+  float: left;
   display: inline-block;
   margin-right: 20px;
   font-size: 1.6rem;
