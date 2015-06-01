@@ -19,7 +19,7 @@ title: 关于我
 
 + 记录个人锻炼记录（移动站点）
     
-    + 网址：[linode.poised-flw.com](http://linode.poised-flw.com)
+    + 网址：[exe.poised-flw.com](http://exe.poised-flw.com)
 
     + 源码： [nice_app](https://github.com/luofei2011/nice_app)
 
