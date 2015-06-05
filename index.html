@@ -86,17 +86,17 @@ title: pagination
 
                 if (diff > 12) {
                     diff = Math.floor(diff / 12);
-                    diff = diff + "年";
+                    diff = diff + '年前';
                 } else {
                     diff = Math.ceil(diff);
-                    diff = diff + "月";
+                    diff = diff + '个月前';
                 }
             } else {
-                diff = Math.ceil(diff);
-                diff = diff + "天";
+                diff = Math.floor(diff);
+                diff = (diff ? diff : '今') + '天' + (diff ? '前' : '');
             }
 
-            diff = "(" + diff + "前)";
+            diff = '(' + diff + ')';
 
             timeline.innerHTML = diff;
         } catch(e) {}
