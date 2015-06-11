@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "IPAD 网页开发阶段经验总结"
+title: "ipad 网页开发阶段经验总结"
 description: "IPAD web develop;IPAD调试"
 category: "移动端"
 tags: 
@@ -199,6 +199,26 @@ setInterval(function () {
         // do something.
     }
 }, 100);
+{%endhighlight%}
+
+#### 用`click`行为
+
+正常来说，都推荐使用touchstart，但是有些需求比较特殊就不得不用click。但是IOS上默认一般是没有所谓的click事件的，除非你在需要触发click事件的结点上加上一个css属性。
+
+{%highlight css%}
+body {
+    cursor: pointer;
+}
+{%endhighlight%}
+
+当然，click在移动设备上会有300ms的点击延迟，解决方法有很多。开源的[Fastclick](https://github.com/ftlabs/fastclick)组件很不错。
+
+{%highlight javascript%}
+var Fastclick = require('fastclick');
+
+Fastclick.attach(document.body, {
+    tapDelay: 50
+});
 {%endhighlight%}
 
 #### 其它
