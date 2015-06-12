@@ -34,6 +34,7 @@ a {
 }
 body {
   margin-top: 80px;
+  line-height: 1.5;
 }
 /*****首页*****/
 #index .tag-item {
