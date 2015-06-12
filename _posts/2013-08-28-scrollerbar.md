@@ -123,7 +123,7 @@ __组成__： 内容可显示区域、内容容器、滚动条外部容器、滚
 	}
 	
 	h.addEventListener("mousewheel", function(e) {
-		var _diff = (e.originalEvent.wheelDelta > 0) ? 30 ? - 30, // 滚动一次移动的距离
+		var _diff = (e.originalEvent.wheelDelta > 0) ? 30 : - 30, // 滚动一次移动的距离
 			_top = b.style.top.replace("px", "") * 1;
 		
 		_diff = _top + _diff;
