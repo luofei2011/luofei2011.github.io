@@ -53,6 +53,7 @@ body {
 }
 #index .blog-item h1 {
   margin: 0;
+  font-size: 1.8rem;
 }
 #index .blog-item p {
   margin-bottom: 6px;
@@ -88,6 +89,7 @@ body {
   border-radius: 5px;
   padding: 1px 5px;
   background: #ffad21;
+  font-size: 1rem;
 }
 #index .blog-tags .tag:last-child {
   margin-right: 0;
@@ -171,6 +173,7 @@ body {
   margin-left: 18px;
 }
 .page-content .wrapper .post blockquote {
+  background-color: #f5f5f5;
   margin: 0 0 10px 0;
   padding: 8px 15px;
   border-left: 3px solid #ddd;
