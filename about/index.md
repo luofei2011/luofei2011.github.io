@@ -77,6 +77,6 @@ title: 关于我
 
 #### 其他
 
-+ Linode 服务器购买： [linode](https://www.linode.com/?r=cbdf902c6a43e84fd6e2ebdac9b8db8fbf5b4f46)
++ VPS服务器购买： [linode](https://www.linode.com/?r=cbdf902c6a43e84fd6e2ebdac9b8db8fbf5b4f46)、[vultr](http://www.vultr.com/?ref=6835929)
 
 + 出租博客空间：支持WP，专人管理，不限流量。100元/年
