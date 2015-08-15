@@ -73,7 +73,7 @@ title: 关于我
 
 + Github: [@luofei2011](https://github.com/luofei2011)
 
-+ 新浪微博：[@骑着蚊子打飞机](http://weibo.com/luofeihit2010)
++ 新浪微博：[@Poised_flw](http://weibo.com/luofeihit2010)
 
 #### 其他
 
