@@ -16,3 +16,5 @@ title: Poised-flw的前端博客
 5. [svn editor vim](/wiki/svn-editor-vim.html)
 
 6. [Ubuntu 时区设置](/wiki/5.html)
+
+7. [服务器运维日志](/wiki/server-op.html)
