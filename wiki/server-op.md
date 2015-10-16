@@ -44,3 +44,9 @@ title: 服务器运维日志
 然后重启服务，当然这并不能解决根本问题，随着访问量越来越大。。。再说吧
 
 参考链接：[Adjusting child processes for PHP-FPM (Nginx)](http://myshell.co.uk/blog/2012/07/adjusting-child-processes-for-php-fpm-nginx/)
+
+#### 2015-10-16 vnstat not update
+
+经常出现vnstat不更新流量使用情况的问题，后来查询发现vnstat的数据都是写到`/var/lib/vnstat`下。所以设置下该目录的权限即可：`chown -R vnstat:vnstat /var/lib/vnstat`
+
+PS: 新建网卡数据的方法：`vnstat -i -u eth0`
