@@ -33,7 +33,7 @@ a(); //undifined, 1
 
 2.定义在函数内的变量不能被函数外的程序访问到
 {%highlight javascript%}
-function a(){
+function test(){
     var a = 1;
 }
 alert(a);//undefined
