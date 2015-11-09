@@ -18,3 +18,5 @@ title: Poised-flw的前端博客
 6. [Ubuntu 时区设置](/wiki/5.html)
 
 7. [服务器运维日志](/wiki/server-op.html)
+
+8. [我想看的书](/wiki/book.html)
