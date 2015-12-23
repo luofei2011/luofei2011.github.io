@@ -20,3 +20,5 @@ title: Poised-flw的前端博客
 7. [服务器运维日志](/wiki/server-op.html)
 
 8. [我想看的书](/wiki/book.html)
+
+9. [ubuntu-12.04.5 LTS部分软件乱码安装备份](/wiki/ubuntu-12.04.5.LTS.source_install.html)
