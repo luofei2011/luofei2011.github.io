@@ -57,22 +57,22 @@
 .vi { color: #aa0000 } /* Name.Variable.Instance */
 .il { color: #009999 } /* Literal.Number.Integer.Long */
 .lineno {
-width: 1%;
-  min-width: 50px;
-  padding-right: 10px;
-  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 1.2rem;
-  line-height: 14px;
-  color: rgba(0,0,0,0.3);
-  vertical-align: top;
-  text-align: right;
-  border: solid #eee;
-  border-width: 0 1px 0 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    width: 1%;
+    min-width: 50px;
+    padding-right: 10px;
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 1.2rem;
+    line-height: 14px;
+    color: rgba(0,0,0,0.3);
+    vertical-align: top;
+    text-align: right;
+    border: solid #eee;
+    border-width: 0 1px 0 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 pre {
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -102,4 +102,8 @@ code {
 pre code {
     background: #fff;
     border: 0 none;
+}
+.highlight {
+    margin: 0;
+    line-height: 1.5;
 }
