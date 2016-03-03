@@ -19,6 +19,9 @@ github_username: luofei2011
 markdown: rdiscount 
 highlighter: pygments
 
+gems: 
+    - jekyll-paginate
+
 # pagination
 paginate: 10
 paginate_path: "page:num"
