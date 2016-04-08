@@ -17,7 +17,7 @@ tags:
 
 这几篇搜索结果中，前几条结果我基本都研究了。但是并没有成功。综合了一下，如下配置是比较靠谱的。
 
-```
+{%highlight conf lineons%}
 location /beta/ {
 	root /var/www/someApp; # 注意，这里实际访问的地址是：/var/www/someApp/beta/
 	try_files $uri $uri/ /index.php?$query_string;
@@ -37,7 +37,7 @@ location /beta/ {
 		fastcgi_index index.php;
 	}   
 }
-```
+{%endhighlight%}
 
 __参考链接__
 
@@ -49,6 +49,6 @@ __参考链接__
 
 __修改`/etc/php5/fpm/php.ini`__
 
-```
+{%highlight conf lineons%}
 cgi.fix_pathinfo=0 # 设置为0
-```
+{%endhighlight%}
