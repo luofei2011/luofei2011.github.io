@@ -3,7 +3,7 @@ layout: default
 title: Mysql多用户 &　权限控制
 ---
 
-#### 添加mysql用户
+#### 添加mysql用户 (5.6下测试有效)
 
 *　首先登录root账户
 
@@ -62,4 +62,26 @@ drop database testDB;
 # 登录root账户
 update mysql.user set password=password('新密码') where User="testUser" and Host="localhost";
 flush privileges;
+```
+
+#### 5.7下添加用户
+
+* 第一步
+
+```mysql
+GRANT USAGE ON *.* TO 'tmpusr'@'localhost' IDENTIFIED BY 'newpassword' WITH GRANT OPTION;
+#tmpusr 用户名
+#newpassword 密码
+```
+
+* 第二步
+
+```mysql
+GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP ON databaseName.*  TO 'tmpusr'@'localhost' IDENTIFIED BY 'newpassword';
+```
+
+* 第三步
+
+```mysql
+FLUSH PRIVILEGES;
 ```
