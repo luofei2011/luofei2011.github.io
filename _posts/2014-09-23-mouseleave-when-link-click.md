@@ -7,7 +7,6 @@ tags:
   - javascript
 ---
 
-{% include JB/setup %}
 
 #### 问题描述
 

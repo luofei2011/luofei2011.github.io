@@ -5,7 +5,6 @@ description: "丰富自己的jquery框架, 使其具备扩展的功能"
 category: jquery
 tags: ['jquery内核']
 ---
-{% include JB/setup %}
 
 本篇继续丰富我的jquery框架,利用extend来扩展!
 

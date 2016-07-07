@@ -6,7 +6,6 @@ category: node.js
 tags: 
   - node.js
 ---
-{% include JB/setup %}
 
 ## 一、node是单线程？ why！
 

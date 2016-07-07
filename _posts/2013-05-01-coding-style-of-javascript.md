@@ -5,7 +5,6 @@ description: "解决问题固然重要, 但是代码的可读性更重要"
 category: javascript
 tags: ['编码风格']
 ---
-{% include JB/setup %}
 
 像我这种第一们语言是C的程序猿,接触到JS的时候也秉承着C的风格;直到看了开源社区那
 些让人痴迷的代码风格以后,决定彻头彻尾的改变自己编写js

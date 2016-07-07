@@ -5,7 +5,6 @@ description: ""
 category: jquery
 tags: ['jquery内核']
 ---
-{% include JB/setup %}
 
 现在来实现jquery插件中经典的几个方法.
 

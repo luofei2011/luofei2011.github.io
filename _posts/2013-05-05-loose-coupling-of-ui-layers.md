@@ -7,7 +7,6 @@ tags:
   - 松耦合
   - JS模板
 ---
-{% include JB/setup %}
 
 ## 前言
 

@@ -6,7 +6,6 @@ category: javascript
 tags: 
   - js事件代理
 ---
-{% include JB/setup %}
 
 ## 事件冒泡
 

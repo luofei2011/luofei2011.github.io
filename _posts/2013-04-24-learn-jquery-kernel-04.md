@@ -5,7 +5,6 @@ description: ""
 category: jquery
 tags: ['jquery内核']
 ---
-{% include JB/setup %}
 
 通过前几篇的分析,大体的画出了jquery的框架,但是它确不具备现实中jquery插件的一切功能!现实中是怎样的?
 

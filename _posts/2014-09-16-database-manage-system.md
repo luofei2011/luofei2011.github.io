@@ -8,7 +8,6 @@ tags:
   - 设计模式
 ---
 
-{% include JB/setup %}
 
 #### 应用场景
 

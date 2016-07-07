@@ -5,7 +5,6 @@ description: "混合代码缩进的时候使用"
 category: vim
 tags: ['vim']
 ---
-{% include JB/setup %}
 
 ### 解决办法:
 

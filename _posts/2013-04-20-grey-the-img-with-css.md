@@ -5,7 +5,6 @@ description: "ie10+ grayscale css整站变灰 grayscale整站变灰"
 category: "css"
 tags: ['life']
 ---
-{% include JB/setup %}
 
 #### 2015-02-10更新
 

@@ -5,7 +5,6 @@ description: ""
 category: jquery
 tags: ['jquery内核']
 ---
-{% include JB/setup %}
 
 上篇已经介绍了由于this指向的一些困扰带来的问题.现在分析怎么实现init的this和原型对象中的this分开.
 

@@ -8,7 +8,6 @@ tags:
   - 学习笔记
   - 编码风格
 ---
-{% include JB/setup %}
 
 在Javascript中, 测试一个变量是否为`null`很普遍, 但是却有问题. 如:
 

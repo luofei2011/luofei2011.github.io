@@ -6,7 +6,6 @@ category: 电脑故障
 tags: 
   - 电脑故障
 ---
-{% include JB/setup %}
 
 ## 一. 问题描述
 

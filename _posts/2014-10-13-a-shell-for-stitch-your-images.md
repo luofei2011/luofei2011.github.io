@@ -7,7 +7,6 @@ tags:
   - nodejs
 ---
 
-{% include JB/setup %}
 
 #### 实例代码
 

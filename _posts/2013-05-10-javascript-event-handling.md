@@ -8,7 +8,6 @@ tags:
   - 翻译
   - 学习笔记
 ---
-{% include JB/setup %}
 
 ## 典型的用法
 

@@ -7,7 +7,6 @@ tags:
   - 编译原理
   - LR(1)
 ---
-{% include JB/setup %}
 
 完整的项目请参考:https://github.com/luofei2011/jslr1
 

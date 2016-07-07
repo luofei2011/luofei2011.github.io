@@ -8,7 +8,6 @@ tags:
   - OOP
 ---
 
-{% include JB/setup %}
 
 ## 为什么要在一个非严格OOP的语言上实现继承
 

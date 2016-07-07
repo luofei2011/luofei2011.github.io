@@ -6,7 +6,6 @@ category: "设计模式"
 tags: 
   - 设计模式
 ---
-{% include JB/setup %}
 
 最近闲来无事，刚好第三次重温下《Javascript 模式》这本书。
 

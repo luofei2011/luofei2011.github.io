@@ -5,7 +5,6 @@ description: "创新研修课的一个小项目"
 category: record
 tags: ['作业']
 ---
-{% include JB/setup %}
 
 ## 工具的简单介绍
 

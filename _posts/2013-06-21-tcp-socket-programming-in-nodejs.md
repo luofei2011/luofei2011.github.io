@@ -7,7 +7,6 @@ tags:
   - 网络编程
   - 翻译
 ---
-{% include JB/setup %}
 
 [译自][http://www.hacksparrow.com/tcp-socket-programming-in-node-js.html](http://www.hacksparrow.com/tcp-socket-programming-in-node-js.html)
 

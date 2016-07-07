@@ -5,7 +5,6 @@ description: ""
 category: javascript
 tags: []
 ---
-{% include JB/setup %}
 
 转载自:[这里](https://developer.mozilla.org/zh-CN/docs/JavaScript/Guide/Inheritance_and_the_prototype_chain)
 

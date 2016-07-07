@@ -5,7 +5,6 @@ description: "在很多布局中,都需要用到100%这个属性"
 category: css
 tags: ['css']
 ---
-{% include JB/setup %}
 
 字面意思就是最小高度,高度的百分比继承于父元素大小.在多次嵌套的div中若里层需要使用min-height:100%.则其所有祖先元素都得设置
 {%highlight css%}

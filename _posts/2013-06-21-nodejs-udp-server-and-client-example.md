@@ -7,7 +7,6 @@ tags:
   - 网络编程
   - 翻译
 ---
-{% include JB/setup %}
 
 [译自][http://www.hacksparrow.com/node-js-udp-server-and-client-example.html](http://www.hacksparrow.com/node-js-udp-server-and-client-example.html)
 

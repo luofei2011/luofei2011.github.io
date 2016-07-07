@@ -7,7 +7,6 @@ tags:
   - 跨域
 ---
 
-{% include JB/setup %}
 
 ## 跨域
 

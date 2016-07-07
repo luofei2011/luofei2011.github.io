@@ -7,7 +7,6 @@ tags:
   - jquery内核
   - DOM
 ---
-{% include JB/setup %}
 
 做到这一步,我的这个jquery框架已经具备了基本的选择器功能(只能直接选择dom节点对象),还具备可扩展功能extend().
 

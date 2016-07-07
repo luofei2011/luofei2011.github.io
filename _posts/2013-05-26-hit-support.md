@@ -7,4 +7,3 @@ tags:
     - 技术支持
 ---
 
-{% include JB/setup %}

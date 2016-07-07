@@ -5,7 +5,6 @@ description: "记录自己写博客走过的历程"
 category: 
 tags: ['life']
 ---
-{% include JB/setup %}
 
 ## 前言
 

@@ -7,7 +7,6 @@ tags:
   - 学习笔记
   - jquery内核
 ---
-{% include JB/setup %}
 
 ## 创建节点
 

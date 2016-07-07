@@ -7,7 +7,6 @@ tags:
   - jquery内核
   - 学习笔记
 ---
-{% include JB/setup %}
 
 ## Sizzle选择器
 

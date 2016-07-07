@@ -6,7 +6,6 @@ category: node.js
 tags: 
   - 模拟登录
 ---
-{% include JB/setup %}
 
 ## 一. 模拟登录
 

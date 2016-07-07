@@ -7,7 +7,6 @@ tags:
   - 数据结构
   - 排序
 ---
-{% include JB/setup %}
 
 ## 直接插入排序(Straight Insertion Sort)
 

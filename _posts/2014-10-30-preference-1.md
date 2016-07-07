@@ -6,7 +6,6 @@ category: "性能优化"
 tags: ['Gruntjs', '性能优化']
 ---
 
-{% include JB/setup %}
 
 本系列文章可以在这里查看：[性能优化系列](http://www.poised-flw.com/categories.html#性能优化-ref)
 

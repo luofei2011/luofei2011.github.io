@@ -8,7 +8,6 @@ tags:
   - hack
 ---
 
-{% include JB/setup %}
 
 ## z-index基础
 

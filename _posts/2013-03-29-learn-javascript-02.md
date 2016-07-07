@@ -6,7 +6,6 @@ category: javascript
 permalink: /javascript/2013/03/29/learn-javascript-02 
 tags: ['闭包']
 ---
-{% include JB/setup %}
 
 在学习闭包之前,要先了解`Javascript`中`作用域(scope)`的相关概念:
 

@@ -5,7 +5,6 @@ description: ""
 category: jquery
 tags: ['jquery内核']
 ---
-{% include JB/setup %}
 
 通过上篇文章的介绍,我们已经能在不使用new关键字的情况下返回一个实例,并且这个实例也拥有了自己的属性和方法.
 

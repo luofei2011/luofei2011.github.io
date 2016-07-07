@@ -5,7 +5,6 @@ description: ""
 category: jquery
 tags: ['jquery内核']
 ---
-{% include JB/setup %}
 
 用jquery一段时间了,也该了解了解内部的具体实现,算是对javascript的高级应用积累点经验.
 

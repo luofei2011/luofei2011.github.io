@@ -8,7 +8,6 @@ tags:
   - php
 ---
 
-{% include JB/setup %}
 
 #### 使用场景
 

@@ -7,7 +7,6 @@ tags:
   - 设计模式
 ---
 
-{% include JB/setup %}
 
 ## 源代码
 

@@ -5,7 +5,6 @@ description: "实现经典的数据结构算法"
 category: javascript
 tags: ['数据结构']
 ---
-{% include JB/setup %}
 
     /*
       * concat()/join()/pop()/push()/reverse()/shift()

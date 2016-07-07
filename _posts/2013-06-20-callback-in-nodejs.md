@@ -7,7 +7,6 @@ tags:
   - node.js
   - 回调函数
 ---
-{% include JB/setup %}
 
 ## 一. node是单线程
 

@@ -5,7 +5,6 @@ description: ""
 category: javascript
 tags: ['object']
 ---
-{% include JB/setup %}
 
 ### 构造函数
 
