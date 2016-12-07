@@ -10,6 +10,10 @@ port: 8888
 host: 127.0.0.1
 detach: true
 
+refer:
+    vultr: http://www.vultr.com/?ref=6960469-3B
+    digitalocean: https://www.digitalocean.com/?refcode=5e5fb5dcfda5
+
 #twitter_username: jekyllrb
 github_username: luofei2011 
 
