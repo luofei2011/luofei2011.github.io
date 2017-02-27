@@ -65,3 +65,6 @@ tags: ['vps']
  
  最后空间就回来了。。。
  
+### 后续补充
+
+`/usr/src`下的`linux-headers-xxx(?-generic)`也可以一并删除
