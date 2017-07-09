@@ -1,8 +1,9 @@
 ---
 layout: post
 title: "【钉钉】企业自建服务窗 - 外部联系人免登实现"
-description: ""
+description: "钉钉"
 category: "钉钉"
+tags: ['钉钉']
 ---
 
 #### 名词解释
