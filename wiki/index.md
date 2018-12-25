@@ -24,3 +24,5 @@ title: Poised-flw的前端博客
 9. [ubuntu-12.04.5 LTS部分软件乱码安装备份](/wiki/ubuntu-12.04.5.LTS.source_install.html)
 
 10. [Mysql多用户&权限控制](/wiki/mysql_add_user.html)
+
+11. [git中使用rebase合并一个范围提交](/wiki/git_rebase_merge.html)
