@@ -3,7 +3,7 @@ layout: post
 title: Ubuntu12.04又遇到的几个问题 - 环境
 description: 'Hash sum mismatch, ubuntu update php5.6'
 category: ubuntu
-tags: ['ubuntu', 'php']()
+tags: ['ubuntu', 'php']
 ---
 
 手里一台虚拟机，很久之前装的`php5.5`，最近一个项目想升级到5.6，或者7.0+。
@@ -44,8 +44,8 @@ sudo apt-get -y install php5.6 php5.6-cli php5.6-common php5.6-curl php5.6-fpm p
 
 或许上面的问题网上都能找到最详尽的通用版解决办法，比如`json_encode`这个，就是装一下`php5.6-json`然后重启fpm啥的，但我的就不生效
 
-* 换一个靠谱的源：[阿里源][2]
-* pptp链接VPN解决ppa源无法下载的问题：[Ubuntu通过PPTP协议使用VPN][3]
+* 换一个靠谱的源：[阿里源][1]
+* pptp链接VPN解决ppa源无法下载的问题：[Ubuntu通过PPTP协议使用VPN][2]
 * 彻底移除之前的php相关文件
 
 ```
@@ -58,8 +58,8 @@ sudo rm -rf /etc/apache2; rm -rf /etc/php5; rm -rf /var/lib/mysql; rm etc/mysql
 
 #### 一些网址
 
-* [How to completely remove PHP?][4]
+* [How to completely remove PHP?][3]
 
-[2]:	http://mirrors.aliyun.com/help/ubuntu
-[3]:	http://blog.fens.me/vpn-pptp-client-ubuntu/
-[4]:	https://askubuntu.com/questions/59886/how-to-completely-remove-php
+[1]:	http://mirrors.aliyun.com/help/ubuntu
+[2]:	http://blog.fens.me/vpn-pptp-client-ubuntu/
+[3]:	https://askubuntu.com/questions/59886/how-to-completely-remove-php
