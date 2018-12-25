@@ -3,7 +3,7 @@ layout: post
 title: Ubuntu12.04又遇到的几个问题 - 环境
 description: 'Hash sum mismatch, ubuntu update php5.6'
 category: ubuntu
-tags: ['ubuntu', 'php']()
+tags: ['ubuntu', 'php']
 ---
 
 手里一台虚拟机，很久之前装的`php5.5`，最近一个项目想升级到5.6，或者7.0+。
