@@ -42,3 +42,20 @@ docker rmi -f $(docker images | grep dev | awk '{print $3}')
 
 * [Fabric-Node-SDK官方文档](https://fabric-sdk-node.github.io)
 
+* [Go语言在线学习](https://go-tour-zh.appspot.com)
+
+* [Docker命令查询](https://yeasy.gitbooks.io/docker_practice/appendix/command/)
+
+* [Docker配置文件详解](https://www.jianshu.com/p/00c5939a64af)
+
+* [Hyperledger Fabric 基于Kafka的多机部署](https://www.jianshu.com/p/9c84673374a5)
+
+* [Fabric-Shim官方文档](https://fabric-shim.github.io)
+
+* [更丰富，更多功能的chaincode例子](https://github.com/introclass/hyperledger-fabric-chaincodes/blob/master/demo/main.go)
+
+* [99元的Hyperledger Fabric进阶实战课](https://study.163.com/course/introduction.htm?courseId=1005359012&_trace_c_p_k2_=baee0632f5b942ee93225f786954094c)
+
+* [超级账本HyperLedger：Fabric的Chaincode（智能合约、链码）开发、使用演示](https://www.lijiaocn.com/%E9%A1%B9%E7%9B%AE/2018/07/17/hyperledger-fabric-chaincodes-example.html)
+
+* [Fabric基于Kafka的共识机制剖析](https://zhuanlan.zhihu.com/p/29671493)
