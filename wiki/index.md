@@ -26,3 +26,5 @@ title: Poised-flw的前端博客
 10. [Mysql多用户&权限控制](/wiki/mysql_add_user.html)
 
 11. [git中使用rebase合并一个范围提交](/wiki/git_rebase_merge.html)
+
+12. [hyperledger fabric开发资料收集](/wiki/fabric.html)
